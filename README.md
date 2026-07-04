@@ -33,19 +33,14 @@ Python 환경: * 패키지 매니저: pip 사용
 ## 3. 프로젝트 폴더 구조 규칙 (권장)
 리액트(Node.js)와 파이썬을 함께 다루므로, 하나의 깃허브 저장소 안에서 폴더를 깔끔하게 나누어 관리합니다.
 
-Plaintext
-
+```
 python-react-study/ (최상위 폴더)
-
  ├── frontend/      # React 관련 코드 모음 (Node.js 환경)
- 
  ├── python_study/  # Python 데이터 처리, API, 알고리즘 연습 코드 모음
- 
  ├── docs/          # 학습 노트, AI 프롬프트 템플릿 저장소
- 
  └── README.md      # 이 저장소의 전체 설명서 및 학습 로그 기록
- 
- 
+```
+
 ## 4. 깃허브(GitHub) 커밋 메세지 규칙
 코드를 저장(Commit)할 때는 나중에 내가 다시 봐도 알아보기 쉽게 '머릿말'을 달아서 기록합니다.
 
@@ -57,49 +52,52 @@ docs: 문서 작업 (예: docs: 개발 환경 문서 업데이트)
 
 study: 학습 및 예제 코드 (예: study: 파이썬 기초 문법 예제 작성)
 
-
-
 # 소스 업로드 방법
 
 ## 1. 변경된 모든 폴더와 파일을 '준비 영역'에 올립니다. (.은 모든 파일을 뜻함)
+
+```bash
 git add .
-
-git config --global core.autocrlf true  => 윈도우 환경에서 Git 쓸때줄바꿈 문자 변환 설정 
-
-git config --global user.email "내이메일@주소.com"  => 내 이메일 설정
-
-git config --global user.name "내이름"  => 내 이름 설정
+git config --global core.autocrlf true  # 윈도우 환경에서 Git 줄바꿈 문자 변환 설정
+git config --global user.email "내이메일@주소.com"  # 내 이메일 설정
+git config --global user.name "내이름"  # 내 이름 설정
+```
 
 ## 2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
+
+```bash
 git commit -m "feat: 프로젝트 기본 디렉토리 구조 및 환경 세팅 완료"
+```
 
 ## 3. 내 컴퓨터의 기록을 깃허브(원격 저장소)로 전송(Push)합니다.
+
+```bash
 git push origin main
+```
 
-## 5. 깃허브 레파지토리 저장소 로컬로 복제 
+## 5. 깃허브 레파지토리 저장소 로컬로 복제
 
-로컬의 디렉토리 생성위치에서 실행 
+로컬의 디렉토리 생성위치에서 실행
 
-rm -rf python-react-study  ( 잘못 생성된 디렉토리 통째로 강제 삭제 윈도우/맥 공통) 
-
+```bash
+rm -rf python-react-study  # 잘못 생성된 디렉토리 통째로 강제 삭제 (윈도우/맥 공통)
 git clone https://github.com/본인의유저네임/리포지토리이름.git
-
 cd 리포지토리이름
+```
 
+# react 프로젝트 생성 (frontend 디렉토리 자동생성됨.)
 
-
-# react 프로젝트 생성  (frontend 디렉토리 자동생성됨.)
+```bash
 npx create-react-app frontend --template typescript
-
 cd frontend
-
-npm start  (server start)
-
-Ctrl + C   (server down) 
+npm start  # server start
+# Ctrl + C   (server down)
+```
 
 # 파이썬 프로젝트 생성
-mkdir python_study  => 디렉토리 생성 필수 
 
+```bash
+mkdir python_study  # 디렉토리 생성 필수
 cd python_study
-
 python -m venv venv
+```
