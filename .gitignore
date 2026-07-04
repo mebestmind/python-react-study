@@ -1,0 +1,22 @@
+# 파이썬 가상환경 폴더 무시
+venv/
+
+# 리액트 무거운 라이브러리 폴더 무시
+node_modules/
+
+# ★ 중요: 환경변수(비밀번호) 파일 무시
+.env
+README.md
+REACT.md
+
+
+
+
+# 이미 올라간 파일은 2단계: 깃(Git)의 기억에서 기존 파일 지우기 (★가장 중요)
+# 주의: 내 컴퓨터의 실제 파일은 안 지워지고, Git의 추적 목록에서만 지워집니다!
+
+# 1. frontend 폴더의 .env 추적 해제
+# git rm --cached frontend/.env
+
+# 2. python_study 폴더의 .env 추적 해제
+# git rm --cached python_study/.env
