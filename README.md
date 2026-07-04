@@ -1,6 +1,14 @@
 # python-react-study
 파이썬과 리액트 풀스택 학습 기록 및 예제 모음
 
+## Table of Contents
+- [Tech Stack](#1-기본-기술-스택-tech-stack)
+- [Development Setup](#2-개발-도구-및-패키지-매니저-세팅)
+- [Project Structure](#3-프로젝트-폴더-구조-규칙-권장)
+- [Git Commit Rules](#4-깃허브github-커밋-메세지-규칙)
+- [How to Upload Code](#소스-업로드-방법)
+- [Repository Setup](#깃허브-레파지토리-저장소-로컬로-복제)
+- [Project Creation](#react-프로젝트-생성--frontend-디렉토리-자동생성됨)
 
 ## 1. 기본 기술 스택 (Tech Stack)
 프론트엔드 (UI/화면): React (Node.js 환경 기반)
@@ -95,9 +103,3 @@ mkdir python_study  => 디렉토리 생성 필수
 cd python_study
 
 python -m venv venv
-
-
-
-
-
-
