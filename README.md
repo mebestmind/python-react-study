@@ -49,9 +49,9 @@ docs: 문서 작업 (예: docs: 개발 환경 문서 업데이트)
 
 study: 학습 및 예제 코드 (예: study: 파이썬 기초 문법 예제 작성)
 
-## 소스 업로드 방법
+# 소스 업로드 방법
 
- # 1. 변경된 모든 폴더와 파일을 '준비 영역'에 올립니다. (.은 모든 파일을 뜻함)
+## 1. 변경된 모든 폴더와 파일을 '준비 영역'에 올립니다. (.은 모든 파일을 뜻함)
 git add .
    
   git config --global core.autocrlf true  (가끔 엔터키(줄바꿈)'를 인식하는 방식이 달라서 발생하는 오류 메세지가 나올때)
@@ -60,23 +60,23 @@ git add .
  git config --global user.email "내이메일@주소.com"  => 내 이메일 설정
  git config --global user.name "내이름"  => 내 이름 설정
 
-# 2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
+## 2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
 git commit -m "feat: 프로젝트 기본 디렉토리 구조 및 환경 세팅 완료"
 
-# 3. 내 컴퓨터의 기록을 깃허브(원격 저장소)로 전송(Push)합니다.
+## 3. 내 컴퓨터의 기록을 깃허브(원격 저장소)로 전송(Push)합니다.
 git push origin main
 
 
-# 5. 깃허브 레파지토리 저장소 로컬로 복제 
+## 5. 깃허브 레파지토리 저장소 로컬로 복제 
  로컬의 디렉토리 생성위치에서 실행 
  잘못 생성된 디렉토리 통째로 강제 삭제 (윈도우/맥 공통) : rm -rf python-react-study
 git clone https://github.com/본인의유저네임/리포지토리이름.git
 cd 리포지토리이름
 
-# 6. react 프로젝트 생성  (frontend 디렉토리 자동생성됨.)
+## 6. react 프로젝트 생성  (frontend 디렉토리 자동생성됨.)
 npx create-react-app frontend --template typescript
 
-# 7. 파이썬 프로젝트 생성
+## 7. 파이썬 프로젝트 생성
 mkdir python_study
 cd python_study
 python -m venv venv
