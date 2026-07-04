@@ -7,7 +7,6 @@ node_modules/
 # ★ 중요: 환경변수(비밀번호) 파일 무시
 .env
 README.md
-REACT.md
 
 
 
