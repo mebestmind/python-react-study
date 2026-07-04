@@ -50,14 +50,15 @@ docs: 문서 작업 (예: docs: 개발 환경 문서 업데이트)
 study: 학습 및 예제 코드 (예: study: 파이썬 기초 문법 예제 작성)
 
 ## 소스 업로드 방법
+
  # 1. 변경된 모든 폴더와 파일을 '준비 영역'에 올립니다. (.은 모든 파일을 뜻함)
 git add .
-  -- 가끔 엔터키(줄바꿈)'를 인식하는 방식이 달라서 발생하는 오류 메세지가 나올때 
-  -- git config --global core.autocrlf true 
+   
+  git config --global core.autocrlf true  (가끔 엔터키(줄바꿈)'를 인식하는 방식이 달라서 발생하는 오류 메세지가 나올때)
      ( 윈도우 환경에서 Git을 쓸 때 줄바꿈 문자를 자동으로 똑똑하게 변환해 달라는 설정 )
 
-- git config --global user.email "내이메일@주소.com"  => 내 이메일 설정
-- git config --global user.name "내이름"  => 내 이름 설정
+ git config --global user.email "내이메일@주소.com"  => 내 이메일 설정
+ git config --global user.name "내이름"  => 내 이름 설정
 
 # 2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
 git commit -m "feat: 프로젝트 기본 디렉토리 구조 및 환경 세팅 완료"
@@ -67,8 +68,8 @@ git push origin main
 
 
 # 5. 깃허브 레파지토리 저장소 로컬로 복제 
-- 로컬의 디렉토리 생성위치에서 실행 
-- 잘못 생성된 디렉토리 통째로 강제 삭제 (윈도우/맥 공통) : rm -rf python-react-study
+ 로컬의 디렉토리 생성위치에서 실행 
+ 잘못 생성된 디렉토리 통째로 강제 삭제 (윈도우/맥 공통) : rm -rf python-react-study
 git clone https://github.com/본인의유저네임/리포지토리이름.git
 cd 리포지토리이름
 
@@ -81,7 +82,6 @@ cd python_study
 python -m venv venv
 
 
-## GITHUB 에 소스 업로드 (위 참조)
 
 
 
