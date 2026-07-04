@@ -26,11 +26,17 @@ Python 환경: * 패키지 매니저: pip 사용
 리액트(Node.js)와 파이썬을 함께 다루므로, 하나의 깃허브 저장소 안에서 폴더를 깔끔하게 나누어 관리합니다.
 
 Plaintext
+
 my-learning-repo/ (최상위 폴더)
+
  ├── frontend/      # React 관련 코드 모음 (Node.js 환경)
+ 
  ├── python_study/  # Python 데이터 처리, API, 알고리즘 연습 코드 모음
+ 
  ├── docs/          # 학습 노트, AI 프롬프트 템플릿 저장소
+ 
  └── README.md      # 이 저장소의 전체 설명서 및 학습 로그 기록
+ 
  
 # 4. 깃허브(GitHub) 커밋 메세지 규칙
 코드를 저장(Commit)할 때는 나중에 내가 다시 봐도 알아보기 쉽게 '머릿말'을 달아서 기록합니다.
