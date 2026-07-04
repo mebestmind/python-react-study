@@ -56,8 +56,8 @@ git add .
   -- git config --global core.autocrlf true 
      ( 윈도우 환경에서 Git을 쓸 때 줄바꿈 문자를 자동으로 똑똑하게 변환해 달라는 설정 )
 
- # git config --global user.email "내이메일@주소.com"  => 내 이메일 설정
- # git config --global user.name "내이름"  => 내 이름 설정
+- git config --global user.email "내이메일@주소.com"  => 내 이메일 설정
+- git config --global user.name "내이름"  => 내 이름 설정
 
 # 2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
 git commit -m "feat: 프로젝트 기본 디렉토리 구조 및 환경 세팅 완료"
@@ -84,5 +84,5 @@ python -m venv venv
 ## GITHUB 에 소스 업로드 (위 참조)
 
 
-###########  여기서부터 프로그램 실습 #####################
+
 
