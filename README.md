@@ -6,9 +6,10 @@
 - [Development Setup](#2-개발-도구-및-패키지-매니저-세팅)
 - [Project Structure](#3-프로젝트-폴더-구조-규칙-권장)
 - [Git Commit Rules](#4-깃허브github-커밋-메세지-규칙)
-- [How to Upload Code](#소스-업로드-방법)
-- [Repository Setup](#깃허브-레파지토리-저장소-로컬로-복제)
-- [Project Creation](#react-프로젝트-생성--frontend-디렉토리-자동생성됨)
+- [How to Upload Code](#5-소스-업로드-방법)
+- [Repository Setup](#6-깃허브-레파지토리-저장소-로컬로-복제)
+- [Create React Project](#7-react-프로젝트-생성--frontend-디렉토리-자동생성됨)
+- [Create Python Project](#8-파이썬-프로젝트-생성)
 
 ## 1. 기본 기술 스택 (Tech Stack)
 프론트엔드 (UI/화면): React (Node.js 환경 기반)
@@ -52,9 +53,9 @@ docs: 문서 작업 (예: docs: 개발 환경 문서 업데이트)
 
 study: 학습 및 예제 코드 (예: study: 파이썬 기초 문법 예제 작성)
 
-# 소스 업로드 방법
+## 5. 소스 업로드 방법
 
-## 1. 변경된 모든 폴더와 파일을 '준비 영역'에 올립니다. (.은 모든 파일을 뜻함)
+### 5.1. 변경된 모든 폴더와 파일을 '준비 영역'에 올립니다. (.은 모든 파일을 뜻함)
 
 ```bash
 git add .
@@ -63,19 +64,19 @@ git config --global user.email "내이메일@주소.com"  # 내 이메일 설정
 git config --global user.name "내이름"  # 내 이름 설정
 ```
 
-## 2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
+### 5.2. 이번 변경사항이 무엇인지 기록(Commit)을 남깁니다.
 
 ```bash
 git commit -m "feat: 프로젝트 기본 디렉토리 구조 및 환경 세팅 완료"
 ```
 
-## 3. 내 컴퓨터의 기록을 깃허브(원격 저장소)로 전송(Push)합니다.
+### 5.3. 내 컴퓨터의 기록을 깃허브(원격 저장소)로 전송(Push)합니다.
 
 ```bash
 git push origin main
 ```
 
-## 5. 깃허브 레파지토리 저장소 로컬로 복제
+## 6. 깃허브 레파지토리 저장소 로컬로 복제
 
 로컬의 디렉토리 생성위치에서 실행
 
@@ -85,7 +86,7 @@ git clone https://github.com/본인의유저네임/리포지토리이름.git
 cd 리포지토리이름
 ```
 
-# react 프로젝트 생성 (frontend 디렉토리 자동생성됨.)
+## 7. React 프로젝트 생성 (frontend 디렉토리 자동생성됨.)
 
 ```bash
 npx create-react-app frontend --template typescript
@@ -94,7 +95,7 @@ npm start  # server start
 # Ctrl + C   (server down)
 ```
 
-# 파이썬 프로젝트 생성
+## 8. 파이썬 프로젝트 생성
 
 ```bash
 mkdir python_study  # 디렉토리 생성 필수
